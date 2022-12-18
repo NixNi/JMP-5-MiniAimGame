@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Aim Training | Проект 5</title>
+    <title>Aim Training</title>
   </head>
   <body>
     <div class="screen">
       <h1>Aim Training</h1>
-      <a href="#" class="start" id="start">Начать игру</a>
+      <a href="#" class="start" id="start">
+        Начать игру
+      </a>
     </div>
 
     <div class="screen">
-      <h1>Выберите время</h1>
+      <h2>Выберите время</h2>
       <ul class="time-list" id="time-list">
         <li>
           <button class="time-btn" data-time="10">
@@ -36,11 +38,90 @@
           </button>
         </li>
       </ul>
+      <h2>Выберите колличество целей на экране за один момент</h2>
+      <ul class="dotcount-list" id="dotcount-list">
+        <li>
+          <button class="dotcount-btn" data-dotcount="1">
+            1 цель
+          </button>
+        </li>
+        <li>
+          <button class="dotcount-btn" data-dotcount="2">
+            2 цели
+          </button>
+        </li>
+        <li>
+          <button class="dotcount-btn" data-dotcount="3">
+            3 цели
+          </button>
+        </li>
+        <li>
+          <button class="dotcount-btn" data-dotcount="4">
+            4 цели
+          </button>
+        </li>
+      </ul>
+      <h2>Выберите вид элементов</h2>
+      <ul class="form-list" id="form-list">
+        <li>
+          <button class="form-btn" data-form="1">
+            Круг
+          </button>
+        </li>
+        <li>
+          <button class="form-btn" data-form="2">
+            Квадрат
+          </button>
+        </li>
+      </ul>
     </div>
-
+    </div>
     <div class="screen">
-      <h3>Осталось <span id="time">00:00</span></h3>
+      <h3>Осталось 
+        <span id="time">
+          00:00
+        </span>
+      </h3>
       <div class="board" id="board"></div>
+    </div>
+    <div class="screen">
+      <h1>Cчет:
+        <span class="primary">
+          ###
+        </span>
+      </h>
+      <h2>Введите имя игрока:</h2>
+      <input class="username-input">
+      <button class="table-btn">
+        К таблице результатов
+      </button>
+    </div>
+    <div class="screen">
+      <h3>
+        Таблица лучших результатов
+      </h3>
+      <table class="score" id="score">
+        <thead>
+          <tr>
+            <th>
+          №
+        </th>
+        <th>
+          Имя
+        </th>
+        <th>
+          Время
+        </th>
+        <th>
+          Очки
+        </th>
+          </tr>
+        </thead>
+        
+      </table>
+      <button class="play-btn">
+        Сыграть снова
+      </button>
     </div>
     <script src="app.js"></script>
   </body>
